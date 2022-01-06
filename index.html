@@ -12,13 +12,14 @@
 
 	  .block300 {
 		height:300px;
-		background: #e0e0e0;
+		background: #D7E5F0;
 		padding:2%;
 		border-radius:8px;
+		font-size:14pt
 	  }
 	  
 	   .block600 {
-		background: #e0e0e0;
+		background: #D7E5F0;
 		padding:2%;
 		border-radius:8px;
 	  }
@@ -34,7 +35,7 @@
 	  
 	  .chartContainer{
 		height:300px;
-		background: #e0e0e0;
+		background: #D7E5F0;
 		border-radius:8px;
 	  }
 	  
@@ -52,11 +53,13 @@
 		width:225px; height:250px;
 	  }
 	  
-	  .featuredBG{border-radius:10px; background-color:#aaa; padding:3%}
+	  .featuredBG{border-radius:10px; background-color:#FFFF; padding:3%}
 	  .featuredTxt{font-size:14pt}
 	  
 	  
 	  .topSpace30{margin-top:30}
+	  
+	  .enlargeImg{background-size:100% 100%;}
 	  
   </style>
   
@@ -90,40 +93,38 @@
 	</nav>
 
 	<div class="text-center container pt-3">
-	<div id="demo" class="carousel slide" data-ride="carousel">
+		<div id="demo" class="carousel slide" data-ride="carousel">
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img1.jpg" class="img-fluid" alt="slide1" width="1080" height="540">
-    </div>
-    <div class="carousel-item">
-      <img src="img2.jpg" class="img-fluid" alt="slide2" width="1080" height="540">
-    </div>
-	
-    <div class="carousel-item">
-      <img src="img3.jpg" class="img-fluid" alt="slide3" width="1080" height="540">
-    </div>
-	
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-  
-  </div>
-	<p>Those colorful creatures have an average life span of only one month.</p> 
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1"></li>
+			<li data-target="#demo" data-slide-to="2"></li>
+		  </ul>
+		  
+		  <!-- The slideshow -->
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <img src="img1.jpg" class="img-fluid" alt="slide1" width="720" height="540">
+			</div>
+			<div class="carousel-item">
+			  <img src="img2.jpg" class="img-fluid" alt="slide2" width="720" height="540">
+			</div>
+			<div class="carousel-item">
+			  <img src="img3.jpg" class="img-fluid" alt="slide3" width="720" height="540">
+			</div>
+		  </div>
+		  
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		  </a>
+	  
+		</div>
+		<p>Those colorful creatures have an average life span of only one month.</p> 
   </div>
 
 	<div class="container topSpace30">
@@ -133,9 +134,8 @@
 			<div class="col-sm-4">
 			 <center><h2>Extinction</h2></center>
 			  <div class="block300">
-				  <p>It has been argued that the destruction of butterflies’ natural habitat, and the increase in the use of pesticides, has caused this decrease in 
-				  the number of butterflies.
-				  </p>
+				<p>It has been argued that the destruction of butterflies’ natural habitat, and the increase in the use of pesticides, has caused this decrease in 
+				the number of butterflies.</p>
 			  </div>
 			</div>
 			
@@ -158,7 +158,7 @@
 	
 		<div class="row">
 		
-		<div class="col-sm-8">
+		<div class="col-sm-7">
 		  <center><h2>Declination during the years</h2></center>
 		  
 		  <div class="chartContainer">
@@ -167,7 +167,7 @@
 		</div>
 	    
 	    
-		<div class="col-sm-4">
+		<div class="col-sm-5">
 		 <center><h2>Discover more</h2></center>
 		  
 		  <div class="block300 onlyDiscoverMore">
@@ -210,24 +210,114 @@
 					
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-sm-4">
 								<br></br>
 								<div class="container featuredBG">
 									<center><p><img class="img-fluid featuredImg" src="BHouse1.jpg"/></p>
-									<p>Quaterine House <b>[Rs1250]</b><button class="forShowBtn">BuyNow</button></p></center>
+									<p><button class="forShowBtn">BuyNow</button></p></center>
+									<div class="row">
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+										<div class="col-sm-5 text-center">
+										<p>Name :</p>
+										</div>
+										<div class="col-sm-5 text-center">
+										<b>Quartz House</b>
+										</div>
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+										<div class="col-sm-5 text-center">
+										<p>Price :</p>
+										</div>
+										<div class="col-sm-5 text-center">
+										<b>Rs 1500</b>
+										</div>
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-4">
 								<br></br>
 								<div class="container featuredBG">
 									<center><p><img class="img-fluid featuredImg" src="BHouse2.jpg"/></p>
-									<p>Wooden House <b>[Rs750]</b><button class="forShowBtn">BuyNow</button></p></center>
-						
+									<p><button class="forShowBtn">BuyNow</button></p></center>
+									<div class="row">
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+										<div class="col-sm-5 text-center">
+										<p>Name :</p>
+										</div>
+										<div class="col-sm-5 text-center">
+										<b>Woodii House</b>
+										</div>
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+										<div class="col-sm-5 text-center">
+										<p>Price :</p>
+										</div>
+										<div class="col-sm-5 text-center">
+										<b>Rs 750</b>
+										</div>
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<br></br>
+								<div class="container featuredBG">
+									<center><p><img class="img-fluid featuredImg" src="BHouse3.jpg"/></p>
+									<p><button class="forShowBtn">BuyNow</button></p></center>
+									<div class="row">
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+										<div class="col-sm-5 text-center">
+										<p>Name :</p>
+										</div>
+										<div class="col-sm-5 text-center">
+										<b>Classic House</b>
+										</div>
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+										<div class="col-sm-5 text-center">
+										<p>Price :</p>
+										</div>
+										<div class="col-sm-5 text-center">
+										<b>Rs 950</b>
+										</div>
+										<div class="col-sm-1 text-center">
+										<!-- TO BE LEFT EMPTY -->
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					
+				
 					
 				</div>
 			</div>
