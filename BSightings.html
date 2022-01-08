@@ -33,6 +33,8 @@
 
 	input[type="checkbox"] {height: 20px; width: 20px;vertical-align: middle;}
 	
+	input[type="submit"] {padding: 10px 20px; border-radius:8px;border:none; background-color:green; color:white; font-size:16pt; margin-top:20px; margin-bottom:20px;}
+	
 	body{font-weight:bold;}
 	
 	.transBG{background-color:#99808080; border-radius:20px; margin-top:50px}
@@ -42,6 +44,8 @@
 	p, label{color:white;}
 	
 	textarea{border-radius:10px}
+	
+	
 	
 	
   </style>
@@ -85,15 +89,17 @@
 		<form>
 		    <div class="form-row">
 				<div class="col-sm-6">
-					<label for="name" class="pt-3">Enter name:</label>
-					<input type="text" class="form-control" id="name" placeholder="Full name" name="name">
-					<label for="email" class="pt-3">Enter email:</label>
-					<input type="text" class="form-control" id="email" placeholder="Email" name="email">
-					<label for="location" class="pt-3">Enter location:</label>
-					<input type="text" class="form-control" id="location" placeholder="Location" name="location">
-					<br><label for="fileselect">Description (optional):</label></br>
-					<textarea rows="5" cols="40" name="Description" id="Description"></textarea>
-					<
+					<p><label for="name" class="pt-3">Enter name:</label>
+					<input type="text" class="form-control" id="name" placeholder="Full name" name="name"/></p>
+					<p><label for="email" class="pt-3">Enter email:</label>
+					<input type="text" class="form-control" id="email" placeholder="Email" name="email"/><p/>
+					<p><label for="location" class="pt-3">Enter location:</label>
+					<input type="text" class="form-control" id="location" placeholder="Location" name="location"/></p>
+					<p><label for="fileselect">Upload photo:</label>
+					<input type="file" name="upload" id="fileselect"/></p>
+					<label for="fileselect">Description (optional):</label>
+					<p><textarea rows="5" cols="40" name="Description" id="Description"></textarea></p>
+					<input type="submit" value="Submit"/>
 				</div>
 			</div>
 		</form>
