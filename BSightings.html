@@ -39,7 +39,7 @@
 	
 	.title{font-size:40pt; font-weight:bold;}
 	
-	p{color:white;}
+	p, label{color:white;}
 	
 	textarea{border-radius:10px}
 	
@@ -76,101 +76,22 @@
 	  </div> 
 	</nav>
 
-	<div class="container">
-		<center><p class="title">Butterfly sightings</p>
+	<div class="container text-center">
+		<p class="title">Butterfly sightings</p>
 		<p>Here you can post information on the butterflies you have spotted.</p>
-		
 	</div>
 	
 	<div class="container transBG">
-		<div class="table-reponsive-sm">
-		<center>
 		<form>
-			<table class="table table-bordered" cellpadding="20" cellspacing="0";> <!-- Defining that there will be spaces around elements in cell but no spaces between cells--> 
-				<tr> 
-				<td> 
-				<label for="Name">First name:</label> <!-- Label of element first input element-->
-				<input type="text" name="Name" maxlength="20" class="editText"/> <!-- input element as an edit text--> 
-				</td> 
-				</tr> 
-				
-				<tr> 
-				<td> 
-				<label for="Surname">Last name:</label> <!-- Label of element third input element-->
-				<input type="text" name="Surname" maxlength="20"class="editText"/> <!-- input element as an edit text--> 
-				</td> 
-				</tr> 
-				
-				<tr>
-				<td> 
-				<label for="Country">Country:</label>
-				<input type="text" name="Country" maxlength="20" class="editText"/>
-				</td>
-				</tr>
-				
-				<tr>
-				<td> 
-				<label for="Region">Region:</label>
-				<input type="text" name="Region" maxlength="20" class="editText"/>
-				</td>
-				</tr>
-				
-				<tr>
-				<td> 
-				<p>Add a comment:</p>
-				<textarea name="text" cols="30" rows="5" class="text-left"></textarea>
-				</td>
-				</tr>
-				
-				<tr> 
-				<td> 
-				<input type="radio" name="gender" id="male"> <!-- input element a radio --> <label for="male">Male</label>
-				<input type="radio" name="gender" id="female"> <!-- input element a radio --> <label for="female">Female</label>
-				</td> 
-				</tr> 
-			</table> 
-		
-			<table class="table table-bordered" cellpadding="20" cellspacing="0";> 
-				<tr> 
-					<td><center> 
-					<input type="checkbox" name="sc"> <!-- input element a checkbox --> 
-					<label for="sc">SC</label>
-					</center> <!-- label of first checkbox--> 
-					</td> 
-				
-					<td><center> 
-					<input type="checkbox" name="hsc"> <!-- input element a checkbox --> 
-					<label for="hsc">HSC</label></center> <!-- label of second checkbox--> 
-					</td> 
-					
-					<td><center> 
-					<input type="checkbox" name="degree"> <!-- input element a checkbox --> 
-					<label for="degree">Degree</label></center> <!-- label of third checkbox--> 
-					</td> 
-				</tr> 
-				
-				<tr> 
-					<td colspan="3"> 
-					<p>Upload your photo here:</p>
-					<p><input type="file" name="upload"></p>
-					</td>
-				</tr> 
-				
-				<tr> 
-					<td><center>
-					<input type="submit" value="Submit" class="button"/> 
-					</td></center> <!-- input element as a submit button --> 
-					
-					<td></td> 
-					
-					<td><center>
-					<input type="reset" value="Reset" class="button"/>
-					</td></center><!-- input element as a reset button --> 
-				</tr> 
-			</table> 
+		    <div class="form-row">
+				<div class="col-sm-6">
+					<label for="name">Enter name:</label>
+					<input type="text" class="form-control" id="name" placeholder="Full name" name="name">
+					<label for="email" class="pt-3">Enter email:</label>
+					<input type="text" class="form-control" id="email" placeholder="Email" name="email">
+				</div>
+			</div>
 		</form>
-		</center>
-		</div>
 	</div>
 	
 	<div class="jumbotron text-center">
