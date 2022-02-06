@@ -18,7 +18,9 @@
 	  .fullwidth{width:100%;}
 	  .fullheight{height:100%;}
 	  .halfheight{height:50%;}
+	  .halfwidth{width:50%;}
 	  .topspace{margin-top:50px;}
+	  .topspace100{margin-top:100px;}
 	  .padding10{padding:10%;}
 	  .BSightings-bg{background-image:url('https://th.bing.com/th/id/OIP.e0UjHcSjT6ZD6_dLDi28TgHaEo?w=262&h=180&c=7&r=0&o=5&pid=1.7');
 	  background-repeat:no-repeat;  background-size:cover;color:#ffff; padding-top:20px; padding-bottom:20px;}
@@ -27,6 +29,25 @@
 	  td{border: 0px solid black ; text-align:center;}
 	  a{color:black}
 	  input[type="submit"] {background-color:green; color:white; padding: 15px 30px; border-radius:5px; border:none; margin-top:50px; margin-bottom:50px;}
+	  
+	  .iframe-container {
+		  overflow: hidden;
+		  padding-top: 56.25%; /* 16:9 */
+		  position: relative;
+		} 
+
+	.iframe-container iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  border: 0;
+	  width: 100%;
+	  height: 50%%;
+	}
+	
+	.txtSize16{
+	   font-size:16pt;
+	  }
 	  
 	
 	  
@@ -145,10 +166,20 @@
 		</div>
 	</div>
 	
+	
+	<center><p class="txtSize16 topspace100">A summary of all the above contents in one single video.</p></center>
+	
+	<div class="iframe-container  container d-flex align-items-center justify-content-center text-center fullheight fullwidth topspace">
+		<center><iframe class="responsive-iframe" width="1080" height="720" src="https://www.youtube.com/embed/ozvbazloZtI" title="YouTube video player" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><center>
+	</div>
+	
+	
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="d-flex align-items-center justify-content-center text-center fullheight fullwidth padding10 table-reponsive topspace">
+				<center><div class="d-flex align-items-center justify-content-center text-center halfheight fullwidth table-reponsive">
 				
 					<table>
 						<tr>
@@ -159,7 +190,7 @@
 						</tr>
 					</table>
 					
-				</div>
+				</div><center>
 			</div>
 		</div>
 	</div>
