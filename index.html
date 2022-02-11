@@ -8,6 +8,41 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	  $(document).ready(function(){
+
+	  $("input").focus(function(){
+		$(this).css("background-color","#ddd");
+	  });
+	  
+	  $("input").blur(function(){
+		$(this).css("background-color","#ffff");
+	  });
+	  
+	  $(".btnColorChange").mouseenter(function(){
+		$(this).css("background-color","white");
+		$(this).css("color","#000");
+	  });
+	  
+	  $(".btnColorChange").mouseleave(function(){
+		$(this).css("background-color","orange");
+		$(this).css("color","#ffff");
+	  });
+	  
+	  $(".btnColorChange1").mouseenter(function(){
+		$(this).css("background-color","f0ead6");
+		$(this).css("color","#000");
+	  });
+  
+	  $(".btnColorChange1").mouseleave(function(){
+		$(this).css("background-color","green");
+		$(this).css("color","#ffff");
+	  });
+	  
+	});
+	</script>
+  
   <style>
 	  
 	  .dark{background-color:#000; color:white;}
@@ -91,7 +126,7 @@
 					<center><p>DID YOU KNOW THEY ARE GOING EXTINCT?</p></center>
 				</div>
 				<div class="d-flex align-items-center justify-content-center fullwidth halfheight">
-					<a href="Endangered.html"><p><button>explore how</button></p></a>
+					<a href="Endangered.html"><p><button class="btnColorChange">explore how</button></p></a>
 				</div>
 			</div>
 		</div>
@@ -184,7 +219,7 @@
 							<td><h2>Do you have some beautiful butterfly scenery? If yes then why not share your pictures with everyone by uploading them on the website.</h2></td>
 						</tr>
 						<tr>
-							<td><a href="BSightings.html"><input type="submit" value="Upload now !"/></a></td>
+							<td><a href="BSightings.html"><input class="btnColorChange1" type="submit" value="Upload now !"/></a></td>
 						</tr>
 					</table>
 					
