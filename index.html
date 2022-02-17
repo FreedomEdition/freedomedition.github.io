@@ -2,14 +2,15 @@
 <head>
   <title>Butterfly project</title>
   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
+	
+  <script>
 	  $(document).ready(function(){
 
 	  $("input").focus(function(){
@@ -46,51 +47,6 @@
 	});
 	</script>
   
-  <style>
-	  
-	  .dark{background-color:#000; color:white;}
-	  .light{background-color:#FFFF; color:#000;}
-	  .graybrown{background-color:#f0ead6; color:#000}
-	  .blue{background-color:#BFe0e0e0; color:#000;}
-	  .title{font-size:35pt; font-family:elephant;}
-	  .fullwidth{width:100%;}
-	  .fullheight{height:100%;}
-	  .halfheight{height:50%;}
-	  .halfwidth{width:50%;}
-	  .topspace{margin-top:50px;}
-	  .topspace100{margin-top:100px;}
-	  .bottomspace100{margin-bottom:100px;}
-	  .padding10{padding:10%;}
-	  .BSightings-bg{background-image:url('https://th.bing.com/th/id/OIP.e0UjHcSjT6ZD6_dLDi28TgHaEo?w=262&h=180&c=7&r=0&o=5&pid=1.7');
-	  background-repeat:no-repeat;  background-size:cover;color:#ffff; padding-top:20px; padding-bottom:20px;}
-	  h1{font-weight:bold}
-	  button{background-color:orange; color:white; padding: 15px 30px; border-radius:30px; border:none}
-	  td{border: 0px solid black ; text-align:center;}
-	  a{color:black}
-	  input[type="submit"] {background-color:green; color:white; padding: 15px 30px; border-radius:5px; border:none; margin-top:50px; margin-bottom:50px;}
-	  
-	  .iframe-container {
-		  overflow: hidden;
-		  padding-top: 56.25%; /* 16:9 */
-		  position: relative;
-		} 
-
-	.iframe-container iframe {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  border: 0;
-	  width: 100%;
-	  height: 50%%;
-	}
-	
-	.txtSize16{
-	   font-size:16pt;
-	  }
-	  
-	
-	  
-  </style>
   
 </head>
 
@@ -119,6 +75,7 @@
 		</div> 			
 	</nav>
 	
+	<!-- page header -->
 	<div class="container-fluid dark">
 		<div class="row">
 			<div class="col-md-6">
@@ -129,23 +86,23 @@
 					<center><p>DID YOU KNOW THEY ARE GOING EXTINCT?</p></center>
 				</div>
 				<div class="d-flex align-items-center justify-content-center fullwidth halfheight">
-					<a href="Endangered.html"><p><button class="btnColorChange">explore how</button></p></a>
+					<a href="Endangered.html"><p><button class="btnColorChange exploreBtn">explore how</button></p></a> <!-- button endangered butterflies page -->
 				</div>
 			</div>
 		</div>
 	</div>
 	
+	<!-- Explain company vision-->
 	<div class="container-fluid light topspace">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="d-flex align-items-center justify-content-center text-center fullheight fullwidth padding10">
 					<font face="tahoma">
 						<p><h1>Our vision</h1></p>
-						<p>Butterflies are distinctive and popular insects with their slim bodies and large colorful wings. There are thousands of different 
-						species of butterfly and they can be found all over the world. Many adult butterflies play an important role in pollinating plants. However, there has been a 
-						decrease in the number of butterflies in the UK.Butterflies are distinctive and popular insects with their slim bodies and large colorful wings. There are thousands of different 
-						species of butterfly and they can be found all over the world. Many adult butterflies play an important role in pollinating plants. However, there has been a 
-						decrease in the number of butterflies in the UK..</p>
+						<p class="txtSize16">We are an international charitable organization
+				that works to conserve and protect endangered butterfly species. Our mission through is website is to 
+				try and raise awareness of the decreasing number of butterflies. We want to encourage our users
+				of this website to take an interest in butterflies and support the butterfly population.</p> <!--paragraph relying company's vision-->
 					</font>
 				</div>
 			</div>
@@ -158,6 +115,8 @@
 		</div>
 	</div>
 	
+	
+	<!-- 3 Links to different pages-->
 	<div class="container-fluid graybrown topspace">
 		<div class="row">
 		
@@ -179,20 +138,20 @@
 								
 								<td> 
 									<p><a href="Information.html"><p><br><img class="img-fluid" src="https://img.icons8.com/ios/2x/learn-information.png"/></br></a>
-									<a href="Information.html"><br>More information on butterflies</br></a></p>
+									<a class="text-dark" href="Information.html"><br>More information on butterflies</br></a></p><!-- Go to information page -->
 								</td>
 								
 							</tr>
 							<tr>
 								<td>
 									<p><a href="BOfTheWorld.html"><br><img class="img-fluid" src="https://img.icons8.com/ios/2x/world.png"/></br></a>
-									<a href="BOfTheWorld.html"><br>Butterfly around the world</br></a></p>
+									<a class="text-dark" href="BOfTheWorld.html"><br>Butterfly around the world</br></a></p> <!-- Go to butterfly of the world page -->
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<p><a href="FurtherResources.html"><br><img class="img-fluid" src="https://img.icons8.com/windows/2x/link.png"/></br></a>
-									<a href="FurtherResources.html"><br>Further resources</br></a></p>
+									<a class="text-dark" href="FurtherResources.html"><br>Further resources</br></a></p> <!-- Go to further resources page -->
 								</td>
 							</tr>
 						</table>
@@ -202,7 +161,7 @@
 		</div>
 	</div>
 	
-	
+	<!-- Video section-->
 	<center><p class="txtSize16 topspace100">A summary of all the above contents in one single video.</p></center>
 	
 	<div class="iframe-container  container d-flex align-items-center justify-content-center text-center fullheight fullwidth topspace">
@@ -211,7 +170,7 @@
 	</div>
 	
 	
-	
+	<!-- Button to a page to upload butterfly sightings-->
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -219,10 +178,10 @@
 				
 					<table>
 						<tr>
-							<td><h2>Do you have some beautiful butterfly scenery? If yes then why not share your pictures with everyone by uploading them on the website.</h2></td>
+							<td><h2>Do you have some beautiful butterfly scenery? <br>If yes then why not share your pictures with everyone by uploading them on the website.</br></h2></td>
 						</tr>
 						<tr>
-							<td><a href="BSightings.html"><input class="btnColorChange1" type="submit" value="Upload now !"/></a></td>
+							<td><a href="BSightings.html"><input class="btnColorChange1" type="submit" value="Upload now !"/></a></td><!-- Go to butterfly sightings page -->
 						</tr>
 					</table>
 					
@@ -231,6 +190,7 @@
 		</div>
 	</div>
 	
+	<!-- footer-->
 	<div class="jumbotron text-center">
 		<p>Powered By FREEDOM EDITION</p>
 	</div>
